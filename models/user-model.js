@@ -4,10 +4,7 @@ const schema = mongoose.Schema({
   username: String,
   password: String,
   aboutMe: String,
-  profilePic: {
-    data: Buffer,
-    contentType: String
-  },
+  profilePic: String,
   isMaker: Boolean
 });
 

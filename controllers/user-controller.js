@@ -15,13 +15,6 @@ const findUserById = async (req, res) => {
   }
 }
 
-const deleteUser = async (req, res) => {
-  req.session.destroy();
-  const userIdToDelete = req.params.id;
-  const status = await userDao.deleteUser(userIdToDelete);
-  res.send(status);
-}
-
 const updateUser = async (req, res) => {
   const userIdToUpdate = req.params.id;
   const updatedUser = req.body;
@@ -32,11 +25,13 @@ const updateUser = async (req, res) => {
     let existingUserWithNewUsername = await userDao.findUserByUsername(updatedUser.username);
     if (existingUserWithNewUsername) {
       res.send(409);
+      return;
     }
   }
 
   try {
-    await userDao.updateUser(userIdToUpdate, updatedUser);
+    const response = await userDao.updateUser(userIdToUpdate, updatedUser);
+    res.send(response);
   } catch (e) {
     res.send(e.errorCode);
   }
@@ -44,7 +39,6 @@ const updateUser = async (req, res) => {
 
 export default (app) => {
   app.get('/api/users/:id', findUserById);
-  app.delete('/api/users/:id', deleteUser);
   app.put('/api/users/:id', updateUser);
   app.get('/api/users', findAllUsers);
 }

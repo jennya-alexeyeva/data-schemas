@@ -35,10 +35,8 @@ const findPatternById = async (req, res) => {
 
 const createPattern = async (req, res) => {
   const newPattern = req.body;
-  console.log(newPattern);
   const authorId = newPattern.author;
   const author = await userDao.findUserById(authorId);
-  console.log(author ?? "no author?");
   if (author && author.isMaker) {
     const createdPattern = await patternsDao.createPattern(newPattern);
     res.json(createdPattern);
@@ -54,6 +52,18 @@ const deletePattern = async (req, res) => {
   res.send(status);
 }
 
+const updatePattern = async (req, res) => {
+  const patternIdToUpdate = req.params.id;
+  const updatedPattern = req.body;
+
+  try {
+    const response = await patternsDao.updatePattern(patternIdToUpdate, updatedPattern);
+    res.send(response);
+  } catch (e) {
+    res.send(e.errorCode);
+  }
+}
+
 export default (app) => {
   app.post('/api/patterns', createPattern);
   app.get('/api/patterns', findAllPatterns);
@@ -61,4 +71,5 @@ export default (app) => {
   app.delete('/api/patterns/:id', deletePattern);
   app.post('/api/patterns/favorites', favoritePattern);
   app.post('/api/patterns/unfavorite', unfavoritePattern);
+  app.put('/api/patterns/update/:id', updatePattern);
 }

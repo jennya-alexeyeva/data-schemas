@@ -2,10 +2,7 @@ import mongoose from 'mongoose';
 
 const schema = mongoose.Schema({
   title: String,
-  image: {
-    data: Buffer,
-    contentType: String
-  },
+  image: String,
   price: Number,
   description: String,
   author: {type: mongoose.Schema.Types.ObjectId, ref: 'PatternMakerModel'},

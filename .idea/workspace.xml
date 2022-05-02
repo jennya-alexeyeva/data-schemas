@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b1e8739-3763-4333-80ed-3527e1506c81" name="Changes" comment="" />
+    <list default="true" id="5b1e8739-3763-4333-80ed-3527e1506c81" name="Changes" comment="first commit :)">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/forum-post-controller.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/pattern-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/pattern-controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/user-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/user-controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/daos/forum-post-dao.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/daos/pattern-dao.js" beforeDir="false" afterPath="$PROJECT_DIR$/daos/pattern-dao.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/daos/user-dao.js" beforeDir="false" afterPath="$PROJECT_DIR$/daos/user-dao.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/forum-post-model.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/pattern-model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/pattern-model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/user-model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/user-model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,10 +29,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="287AHWtHCqi8nvWGKBoinv22Kih" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -38,6 +54,11 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jennya.alexeyeva\OneDrive\Desktop\webdev\data-schemas" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -58,11 +79,35 @@
       <workItem from="1650729868602" duration="16101000" />
       <workItem from="1650832055137" duration="1049000" />
       <workItem from="1651341363441" duration="25105000" />
-      <workItem from="1651424021776" duration="6089000" />
+      <workItem from="1651424021776" duration="6229000" />
+      <workItem from="1651471129503" duration="4618000" />
     </task>
+    <task id="LOCAL-00001" summary="first commit :)">
+      <created>1651462884521</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1651462884521</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit :)" />
   </component>
 </project>
