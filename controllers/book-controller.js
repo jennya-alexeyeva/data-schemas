@@ -17,8 +17,6 @@ const unfavoriteBook = async (req, res) => {
   let book = req.body.pattern;
   let user = req.body.user;
 
-  console.log(book);
-  console.log(user);
   book = await bookDao.unfavoriteBook(book, user._id);
   res.json(book);
 }
